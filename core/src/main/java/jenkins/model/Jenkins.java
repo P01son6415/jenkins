@@ -4192,7 +4192,7 @@ public class Jenkins extends AbstractCIBase implements DirectlyModifiableTopLeve
             return;
         }
 
-        System.out.println(req.getReferer());
+        System.out.println("**************"+req.getReferer());
 
         //Request from rest client
         if (req != null && req.getReferer() == null && req.getMethod().equals("POST")) {
